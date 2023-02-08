@@ -20,4 +20,13 @@ function getUserInfo(){
     let author = document.getElementById("authorTextBox").value;
     let pages = document.getElementById("pagesTextBox").value;
     let read = document.getElementById("readTextBox").value;
+    addBookToLibrary(title, author, pages, read);
+    console.log(myLibrary);
 }
+
+const form = document.querySelector("#newBook");
+form.addEventListener('submit', (e) => {
+    getUserInfo();
+});
+
+
