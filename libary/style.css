@@ -1,8 +1,29 @@
-.openForm {
-    background-color: blue;
-}
 
 #newBookForm {
     display: none;
+    position: fixed;
+    top: 7vh;
+    justify-content: center;
+    border: 3px solid black;
 }
 
+#newBook {
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    gap: 20px;
+    
+}
+
+.button {
+    background-color: #EFF6EE;
+    border: 1px black solid;
+    border-radius: 3px;
+    height: 75%;
+    width: 150px;
+}

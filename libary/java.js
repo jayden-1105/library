@@ -1,6 +1,6 @@
 let myLibrary = [];
 const form = document.querySelector("#newBook");
-const button = document.querySelector("#consoleLog");
+const button = document.querySelector(".consoleLog");
 const titleInput = document.querySelector("#titleTextBox");
 const authorInput = document.querySelector("#authorTextBox");
 const pagesInput = document.querySelector("#pagesTextBox");
@@ -74,6 +74,7 @@ function closeForm(){
     document.getElementById("newBookForm").style.display = "none";
 }
 
+//Clears Library Display before Looping through My Library 
 function clearLibraryDisplay(){
     let child = container.lastElementChild;
     while (child){
