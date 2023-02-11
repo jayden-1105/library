@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="newBook">
-        <div id="newBookForm">
+    <button class="openForm" onclick="openForm()">Add Book</button>
+    <div id="newBookForm">
+        <form id="newBook">
             <div id="newBookTitle">
                 <label for="Book Title" class="textBoxLabel">Book Title</label>
                 <input type="text" class="textBox" id="titleTextBox" name="Title" required>
@@ -26,9 +27,17 @@
                 <label for="Book Read" class="textBoxLabel">Read Yes or No</label>
                 <input type="text" class="textBox" id="readTextBox" name="Read" required>
             </div>  
-        </div>
-        <button type="submit" id="submit">Submit</button>
-    </form>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <button id="consoleLog">Console Log</button>
+    <div id="library">
+        <h1>My Library</h1>
+            <div id="container">
+
+            </div>
+
+    </div>
     <script type="text/javascript" src="java.js"></script>
 </body>
 </html>
